@@ -4,16 +4,15 @@ namespace Assignment._4_C.sharp04
 {
     public class Program
     {
-        #region Q3
+        #region Q4
         public class Book { 
-            public string title ; 
+            public Genre genre ; 
         }
         public static void Main(string[] args)
         {
             Book book = new Book();
-           book.title = "Clean Code"; // This will work because the property is public
-                                    // public can be accessed within the same Project or out side project
-        Console.WriteLine(book.title);
+           book.genre = Genre.Science;
+            Console.WriteLine(book.genre); // Science
         }
         #endregion
     }
