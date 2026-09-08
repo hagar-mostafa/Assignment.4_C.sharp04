@@ -4,15 +4,15 @@ namespace Assignment._4_C.sharp04
 {
     public class Program
     {
-        #region Q6
+        #region Q7
         public class Book { 
             public Genre genre ; 
         }
         public static void Main(string[] args)
         {
             Book book = new Book();
-            int genreNumber = 1;
-            Console.WriteLine($"The genre of the book is: {(Genre)genreNumber}");
+            Genre genre = Genre.Fiction;
+            Console.WriteLine("gener after to string is : " + genre.ToString());
 
         }
         #endregion
