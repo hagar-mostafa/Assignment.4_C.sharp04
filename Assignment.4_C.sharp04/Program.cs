@@ -4,16 +4,16 @@ namespace Assignment._4_C.sharp04
 {
     public class Program
     {
-        #region Q8
+        #region Q9
         public class Book { 
             public Genre genre ; 
         }
         public static void Main(string[] args)
         {
-            Book book = new Book();
-            string genreText = "Science";
-            Enum.Parse(typeof(Genre), genreText);
-            Console.WriteLine(" After Using Parse() : " + genreText );
+           string genreText = "Mystery";
+           bool flag =  Enum.TryParse(genreText, out Genre genre);
+
+            Console.WriteLine(flag ? genreText : "Unknown genre");
 
         }
         #endregion
